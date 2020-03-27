@@ -1,10 +1,34 @@
+@font-face {
+    font-family: 'spotify-circular';
+    src: url("https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Light.afd9ab26.woff2") format('woff2'),
+        url("https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Light.2a78c017.woff") format('woff'),
+        url("https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Light.89e4be2e.ttf") format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'spotify-circular';
+    src: url("https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Book.3466e0ec.woff2") format('woff2'),
+        url("https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Book.ea8d19db.woff") format('woff'),
+        url("https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Book.a357677a.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'spotify-circular';
+    src: url("https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Bold.8d0a45cc.woff2") format('woff2'),
+        url("https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Bold.10e93738.woff") format('woff'),
+        url("https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Bold.7eb7d0f7.ttf") format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
 * {
     scrollbar-color:#2a2c2e#1c1e1f;
     scroll-behavior: smooth;
     /*box-sizing: border-box;*/
 }
 body {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-family: 'spotify-circular', Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -69,8 +93,8 @@ body {
     font-size: 2rem;
     font-style: italic;
     margin-top:.25rem;
-    letter-spacing: .8rem;
-    font-weight: 300;
+    letter-spacing: .6rem;
+    font-weight: 200;
 }
 .title-small {
     margin: 0;
@@ -115,6 +139,10 @@ body {
 .c2-colums{
     width: 50%;
 }
+.disque-img {
+    width: 80%;
+    max-width: 500px;
+}
 .grid-disc img{
     scale: 1;
     transition: .5s ease-out;
@@ -129,7 +157,7 @@ body {
 }
 .bg-fade {
     height: 100%;
-    background-image: linear-gradient(to top, transparent, rgba(0, 0, 0)),linear-gradient(-40deg, rgb(25, 158, 78) 0%, rgb(0, 0, 0) 80%);
+    background-image: linear-gradient(to top, transparent, rgba(0, 0, 0)),linear-gradient(-40deg, rgb(29, 185, 84) 0%, rgb(0, 0, 0) 80%);
 }
 .section3-container {
     height: 100%;
@@ -143,20 +171,37 @@ body {
     width: auto;
     padding: 0 8%;
 }
-.listen-button {
-    width: 25%;
-
+.spoti-button {
+    border: 0px none;
+    background: rgb(29, 185, 84);
+    padding: 15px 40px;
+    border-radius: 25px;
+    cursor: pointer;
 }
-.button a{
-    color: white;
+.spoti-button:hover {
+    border: 0px none;
+    background: rgb(29, 185, 84);
+    padding: 15px 40px;
+    border-radius: 25px;
+}
+.listen {
+    color: #fff;
+    position: relative;
     text-decoration: none;
+    white-space: nowrap;
+    font-weight: 600;
+    font-family: 'spotify-circular', Arial, Helvetica, sans-serif;
+    line-height: 16px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
 }
 .iframe-spotify {
     display: flex;
     align-items: center;
     justify-content: center;
     height:85%;
-    background-image: linear-gradient(to bottom, rgb(38, 49, 48) 0%, rgb(0, 0, 0) 80%);
+    background-image: linear-gradient(to bottom, rgb(36, 48, 47) 0%, rgb(0, 0, 0) 80%);
     border-radius: 15px;
 }
 .iframe-spotify iframe{
@@ -165,7 +210,8 @@ body {
 }
 footer {
     font-size: .9rem;
-    letter-spacing: .12rem;
+    font-weight: 200;
+    letter-spacing: .10rem;
     height: 4.5rem;
     background-color: #000;
     color: #fff;
