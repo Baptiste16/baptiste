@@ -238,10 +238,14 @@ float: left;
     width: 100%;
 }
 footer {
+    text-align: center;
+    background-color: #000;
     font-size: .9rem;
     font-weight: 200;
     letter-spacing: .10rem;
     height: 4.5rem;
-    background-color: #000;
     color: #fff;
+}
+.footer {
+    width: 100%;
 }
